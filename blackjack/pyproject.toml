@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackjack"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+blackjack_app = "blackjack:app.main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
