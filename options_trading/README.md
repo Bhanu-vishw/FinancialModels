@@ -1,11 +1,3 @@
-# FM 5151: Final project
-
-Your name: Bhanu Vishwakarma 
-Your email: vishw045@umn.edu
-
-(Fill in details below for how to run, etc.)
-
-
 Structure: 
 
 \final_starter\starter\pkg\src\final: contains .py files including the ones newly created - volatility.py (for realized volitility calculation using EWMA model)
