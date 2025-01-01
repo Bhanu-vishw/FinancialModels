@@ -1,0 +1,21 @@
+# Dockerfile.engine
+FROM python:3.10-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the streaming.py script and the requirements.txt into the container
+COPY main.py requirements.txt ./
+
+# Step 4: Install the dependencies
+RUN apt-get update \
+    && apt-get install -y pip \
+    && pip3 install --upgrade pip \
+    && pip3 install -r requirements.txt
+
+# Copy the env file into app before running th epython script
+COPY .env /app
+
+# Command to run the engine service
+CMD ["python", "main.py"]
+

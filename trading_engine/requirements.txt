@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+requests
+psycopg2-binary
+sqlalchemy
+pydantic
+alpaca-trade-api
+pytz
+alpaca-py
+aiohttp
