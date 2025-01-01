@@ -16,11 +16,3 @@ This repository contains the implementation of `backtestlib`, a simple backtesti
 
 ---
 
-## **Getting Started**  
-
-### Setup:  
-1. Unzip the starter code (`backtestlib.zip`) and navigate to the directory containing `pyproject.toml`.  
-2. Activate your Python environment:  
-   ```bash
-   $ conda activate fm5151
-
