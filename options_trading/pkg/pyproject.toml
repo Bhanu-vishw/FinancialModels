@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "final"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy~=2.1",
+    "pandas~=2.2",
+    "pytest~=8.0",
+    "scipy~=1.14",
+    "matplotlib~=3.9"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
