@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: backtestlib
+Version: 0.0.1
+Requires-Python: >=3.11
+Requires-Dist: numpy<2.2,>=2.1
+Requires-Dist: pandas<2.3,~=2.2
