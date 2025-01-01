@@ -1,4 +1,4 @@
-# Backtest Library Assignment  
+# Backtest Library
 
 This repository contains the implementation of `backtestlib`, a simple backtesting library designed for evaluating trading strategies on historical data. The project builds on a starter code base and includes tasks to fill in missing components, implement data providers, and create various trading strategies.  
 
