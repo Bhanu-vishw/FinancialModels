@@ -1,0 +1,28 @@
+FROM python:3.11.10-slim-bookworm AS collector
+
+
+# Your implementation
+
+
+# Step 2: Set the working directory inside the container
+WORKDIR /app
+
+# Step 3: Copy the requirements.txt file from the root directory into the container
+COPY requirements.txt .
+
+# Step 4: Install the dependencies
+RUN apt-get update \
+    && apt-get install -y pip \
+    && pip3 install --upgrade pip \
+    && pip3 install -r requirements.txt
+
+
+# Step 5: Copy the collector source code and cfg.json into the container
+COPY  ./collector /app
+
+
+# Copy the env file into app before running th epython script
+COPY .env /app
+
+# Step 6: Set the command to run the collector script
+CMD ["python", "main.py"]

@@ -1,0 +1,16 @@
+{
+    "table_name": "daily_history",
+    "symbols": [
+        "AAPL",
+        "NVDA",
+        "MSFT",
+        "GOOGL",
+        "GOOG",
+        "AMZN",
+        "META",
+        "BRK.B",
+        "AVGO",
+        "TSLA"
+    ],
+    "lookback_days": 30
+}

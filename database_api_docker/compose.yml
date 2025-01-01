@@ -1,0 +1,28 @@
+name: lab5
+
+services:
+  questdb:
+    image: questdb/questdb:8.1.4
+    ports:
+      - 9000:9000 # REST API and Web Console
+      - 9009:9009 # InfluxDB Line Protocol
+      - 8812:8812 # Postgres Wire Protocol
+      - 9003:9003 # Healthcheck
+  
+  collector:
+    build:
+      context: .
+      dockerfile: Dockerfile.collector
+    environment:
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_API_SECRET=${ALPACA_API_SECRET}
+      - QUESTDB_HOST=questdb
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      - QUESTDB_HOST=questdb
+    ports:
+      - 8000:8000
