@@ -1,4 +1,4 @@
-# Volatility Models Calibration Homework
+# Volatility Models Calibration
 
 This repository contains the implementation of various volatility models, including EWMA and GARCH(1,1), to estimate and analyze financial market variances. The assignment walks through creating key components such as log-likelihood functions, variance estimators, and optimization routines for parameter calibration.
 
