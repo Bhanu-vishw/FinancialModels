@@ -1,10 +1,10 @@
-## Stock Analytics Dashboard
+# Stock Analytics Dashboard
 
-#### Overview
+### Overview
 
 The Stock Analytics Dashboard is an interactive web application built with Streamlit that allows users to analyze stock market data with various visualization tools. It provides real-time updates, historical trends, correlation analysis, and key statistical insights.
 
-Features
+### Features
 
 ✅ Stock Symbol Selection - Choose from multiple stock symbols to analyze individual or multiple stocks.
 
@@ -22,7 +22,7 @@ Features
 
 ✅ RSI (Relative Strength Index) Indicator - Evaluate overbought or oversold conditions in the stock.
 
-#### Technologies Used
+### Technologies Used
 
 Python - Core programming language.
 
@@ -38,30 +38,30 @@ Matplotlib & Seaborn - Statistical plotting and correlation analysis.
 
 Alpaca API - Fetching real-time and historical stock market data.
 
-#### Installation & Setup
+### Installation & Setup
 
-##### Prerequisites
+#### Prerequisites
 
 Ensure you have Python 3.8+ installed on your system.
 
-##### Clone the Repository
+#### Clone the Repository
 
 https://github.com/yourusername/stock-analytics-dashboard.git
 cd stock-analytics-dashboard
 
-##### Install Dependencies
+#### Install Dependencies
 
 pip install -r requirements.txt
 
-##### Run the FastAPI Backend
+#### Run the FastAPI Backend
 
 uvicorn api:app --host 0.0.0.0 --port 8000
 
-##### Run the Streamlit Dashboard
+#### Run the Streamlit Dashboard
 
 streamlit run app.py
 
-#### Usage
+### Usage
 
 Select a stock symbol from the dropdown menu.
 
@@ -75,6 +75,6 @@ Screenshots
 
 
 
-#### Contributing
+### Contributing
 
 Feel free to contribute by submitting a pull request or opening an issue.
