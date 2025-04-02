@@ -1,0 +1,21 @@
+# Use a lightweight Python image
+FROM python:3.10-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the engine directory (including engine.py and strategy.py) and requirements.txt
+COPY engine/ requirements.txt ./
+
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    && python -m pip install --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy environment variables file
+COPY .env /app
+
+# Set the command to run the engine
+CMD ["python", "engine.py"]

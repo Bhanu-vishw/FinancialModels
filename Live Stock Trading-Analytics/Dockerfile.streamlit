@@ -1,0 +1,23 @@
+# Use Python as the base image
+FROM python:3.11.10-slim-bookworm
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the requirements file from the root
+COPY requirements.txt . 
+
+# Install dependencies
+RUN apt-get update \
+    && apt-get install -y python3-pip \
+    && pip3 install --upgrade pip \
+    && pip3 install -r requirements.txt \
+    && pip3 install streamlit 
+
+# Copy the Streamlit app from the api folder
+COPY api/server2.py /app
+
+COPY .env /app
+
+# Run Streamlit on container startup
+CMD ["python3", "-m", "streamlit", "run", "server2.py", "--server.port=8501", "--server.address=0.0.0.0"]
