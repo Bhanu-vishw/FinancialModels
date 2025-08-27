@@ -1,6 +1,8 @@
 # 📈 Algorithmic Trading System  
 
-An end-to-end **algorithmic trading platform** built in Python with live trading, backtesting, and analytics.  
+An end-to-end **algorithmic trading platform** built in Python with live trading, backtesting, and analytics.  (version4 of version14)
+
+Description below is for the final version.
 
 ---
 
