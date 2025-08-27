@@ -1,8 +1,6 @@
-# 📈 Algorithmic Trading System  
+# 📈 Live Stock Trading-Analytics (version4 of version11)
 
-An end-to-end **algorithmic trading platform** built in Python with live trading, backtesting, and analytics.  (version4 of version14)
-
-Description below is for the final version.
+Description below is for the final version of **algorithmic trading platform** version 11
 
 ---
 
